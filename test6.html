@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var x = 10;
+
+        // function fn() {
+        //     console.log(x);//10
+        // }
+
+        // function show(f) {
+        //     var x = 20;
+        //     f();
+        // }
+        // show(fn);
+
+
+        var x = 10;
+
+        function show() {
+            fn() //undefined
+            var x = 20;
+            fn() //20
+            function fn() {
+                console.log(x);
+            }
+
+        }
+        show();
+
+
+        // var x = 10;
+
+        // function show() {
+
+        //     var x = 20;
+
+        //     function fn() {
+        //         console.log(x);
+        //     }
+        //     fn() //20
+        // }
+        // show();
+
+
+
+        // var obj = { //    对象变量不能产生局部作用域,所以会找到全局去,导致报错
+        //     fn2: function () {
+        //         // console.log(fn2)
+        //         console.log(this.fn2)
+        //     }
+        // }
+        // obj.fn2()
+    </script>
+</body>
+
+</html>
